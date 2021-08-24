@@ -31,7 +31,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_FOLDER)/board-info.txt
 TARGET_BOOTLOADER_BOARD_NAME := tuna
 
 # Binder API version
-TARGET_USES_64_BIT_BINDER := true
+# TARGET_USES_64_BIT_BINDER := true
 
 # Build
 HWUI_COMPILE_FOR_PERF := true
@@ -55,8 +55,8 @@ TARGET_OTA_ASSERT_DEVICE := tuna,maguro,toro,toroplus
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME)
 TARGET_KERNEL_CONFIG := tuna_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/tuna
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.7-linaro/bin
+TARGET_KERNEL_SOURCE := kernel/ti/omap4
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.7/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Camera
